@@ -1,0 +1,23 @@
+<phpunit colors="true">
+  
+	<testsuites>
+	<testsuite name="poneys">
+	  	<file>PoneysTest.php</file>
+	</testsuite>
+
+	 <testsuite name="myclass">
+	  	<file>MyTest.php</file>
+	</testsuite>
+	</testsuites>
+
+	<logging>
+	    <log type="junit" target="/tmp/logfile.xml" logIncompleteSkipped="false"/>
+	</logging>
+
+	<php>
+	  	<includePath>.</includePath>
+	  	<env name="min" value="8"/>
+	  	<env name="max" value="18"/>
+	</php>
+
+</phpunit>
