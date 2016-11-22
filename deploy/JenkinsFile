@@ -1,0 +1,8 @@
+node 
+{
+    stage 'Build'
+        git url: 'https://github.com/KansassCityShuffle/poneys.git/'
+        
+    stage 'Test'
+        sh "phpunit --log-junit results/phpunit/phpunit.xml -c tests/"
+}
